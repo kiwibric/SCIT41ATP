@@ -44,8 +44,8 @@ public class MapController {
 		model.addAttribute("tc", tc);
 		
 		//선생님 후기
-		ArrayList<ReviewVO> selectTrReview = rdao.selectTrReview(teacherId);
-		model.addAttribute("selectTrReview", selectTrReview);
+		ArrayList<ReviewVO> selectTcReview = rdao.selectTcReview(teacherId);
+		model.addAttribute("selectTcReview", selectTcReview);
 		
 		return "infoWindow";
 	}
